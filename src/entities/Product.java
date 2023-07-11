@@ -4,14 +4,14 @@ public class Product {
 	
 	
 	protected String name;
-	protected double price;
+	protected Double price;
 	
 	
 	public Product() {
 		
 	}
 	
-	public Product(String name, double price) {
+	public Product(String name, Double price) {
 		super();
 		this.name = name;
 		this.price = price;
@@ -25,17 +25,19 @@ public class Product {
 		this.name = name;
 	}
 
-	public double getPrice() {
+	public Double getPrice() {
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 	
-	protected String priceTag() {
-		return name + " - " + String.format("%.2F", price);
+	public String priceTag() {
+		return name + " - " + String.format("%.2f", price);
 	}
+	
+
 	
 
 }
